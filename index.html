@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/6feef383ca.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel landing page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="explore.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Travel!!!</h2>
+            <h3>Before you run out of time...,</h3>
+            <p>Most people agree travelling is a good thing. People think it’s exciting, almost
+               invigorating to travel. Travelling is the best way to learn new things, whether 
+               it be a new language or new culture because you’re experiencing it first hand 
+               instead of just reading or looking at pictures.</p>
+               <a href="#">Join Us</a>
+        </div>
+         <ul class="social">
+             <li><a href="#"><i class="fas fa-home" alt=""></i></a></li>
+             <li><a href="#"><i class="fas fa-drumstick-bite" alt=""></i></a></li>
+             <li><a href="#"><i class="fab fa-instagram" alt=""></i></a></li>
+             <li><a href="#"><i class="fab fa-facebook" alt=""></i></a></li>
+             <li><a href="#"><i class="fab fa-twitter"alt=""></i></a></li>
+             <li><a href="#"><i class="fab fa-youtube"alt=""></i></a></li>
+         </ul>
+
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">updates</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Customer service</a></li>
+        </ul>
+    </div>
+    <script>
+       const menuToggle = document.querySelector('.toggle');
+       const showcase = document.querySelector('.showcase');
+
+       menuToggle.addEventListener('click', () => {
+       menuToggle.classList.toggle('active');
+       showcase.classList.toggle('active');
+      })
+    </script>
+    
+</body>
+</html>
